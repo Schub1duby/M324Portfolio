@@ -13,51 +13,29 @@ Der Branchenstandard für Versionsverwaltungen ist Git.
 
 
 
+# Planung
 
-## Tools zum Planen
 
-Wir haben diverse Tools zur Planung analysiert, welche wir nachfolgend erläutern.
-
-### Confluence
-Confluence ist ein Wiki-Tool für Unternehmen vom Anbieter Atlassian. Man kann dort neben Textseiten aber auch Datenbanken und Whiteboards. Ebenfalls bieten sie eine leistungsstarke Suchfunktion und KI unterstützung zum Verfassen der Texte. Das Programm ist kostenpflichtig und in Kombination mit Jira können Wikiseiten in Kanban-Boards verlinkt werden.
-
-### Klipfolio
-Klipfolio vom gleichnamigen Anbieter ist ebenfalls ein kostenpflichtiges Tool. Dieses Tool setzt den Fokus auf die Darstellung der KPIs.
-
-### Trello
+## Kurzbeschreibung der verwendeten Apps/Tools:
 Trello ist ebenfalls ein Tool von Atlassian, welches jedoch neben den kostenpflichtigen Varianten eine kostenlose anbietet. Diese beinhaltet wie die kostenpflichtige Variante Automatisierung und Boards, ist jedoch nur für Teams bis zu zehn Personen nutzbar und hat nicht alle Ansichten, die die premium Version bietet.
+## Begründung der Wahl dieser Tools:
+Wir haben uns für Trello entschieden, da das Tool relativ übersichtlich und schlank aussieht. Uns hat interessiert ob so ein schlankes Tool die nötigen Anforderungen erfüllen kann.
+Wir hatten noch Klipfolio und Confluence im Auge aber entweder haben die Tools keine kostenfreie Version oder wir verwenden die Tools bereits in unseren Betrieb. 
 
-### Entscheidung
-Wir haben uns für Trello entschieden, da Klipfolio kostenpflichtig ist und wir beide Confluence aus unseren Betrieben bereits in- und auswendig kennen. Wir möchten ja hier etwas neues lernen.
+## Erfahrungen mit den gewählten Tools:
+Wir haben eine positive Erfahrung mit Trello gemacht. Es ist ein Tool welches relativ schlank ist aber genug an Features bietet. Aus unserer Sicht es perfekt geeignet für den persönlichen Gebrauch 
+oder in kleinen Teams. Für grosse Teams hat es ein wenig zu wenig Features bzw. wird dann mit der Zeit ein wenig zu unübersichtlich. 
+Das generelle Feeling und arbeiten mit dem Tool war sehr angenehm und intuitiv. Wir konnten sehr schnell ein Board erstellen und auch darauf Items platzieren und diese dann auch herumschieben. Wir fanden vor allem das Feature dass man Items Zeitlich begrenzen kann und sie dann auch in einer Kalenderansicht anschauen kann. 
+So kann man schnell ansehen welche Items wann fällig sind. 
+## Reflexion:
+Die generellen Grundfunktionen laufen in diesem Tool einwandfrei. Die Bedienung des Boards ist einfach und funktioniert einwandfrei. Es fehlt uns aber ein wenig an zusätzlichen Funktionen. Z. B. kann man nicht richtig in Sprints und nach allgemeinen Scrum Prinzipien arbeiten. Diese Dinge müsste man separat managen. Ausserdem kann man 
+auch nicht richtig die Ressourcen managen bzw. Grafiken wie Burn Down Charts etc. generieren lassen. 
+Unsere Erkenntnis ist, dass Trello für kleine Teams gut einsetzbar ist wo 3-5 Leute miteinander arbeiten. Sobald aber dann noch Product Owner von aussen und viele Stakeholder dazukommen wird das Tool sehr schnell unübersichtlich und wir denken dass dann ein Jira besser geeignet wäre.
+Wir sehen aber auch das Potenzial Trello als persönliches Aufgabentracking, sei es Privat oder Geschäftlich, hat. Man kann sehr schnell und einfach dort seine Aufgaben erfassen und einen Überblick zu behalten. Mit der Kalenderfunktion kann man es noch Zeitlich begrenzen. 
+## Alternative Tools:
+Jira: Branchenstandard und hat eine Gratisversion. Da es aber so populär ist, wollten wir etwas anderes ausprobieren um unseren Horizont zu erweitern.
+Azure DevOps: Auch relativ weit verbreitet und Cyrill kennt bereits das Tool weswegen wir uns dagegen entschieden haben, da wir beide ein neues Tool kennenlernen wollten. 
+Monday.com: Hat ebenfalls eine kostenlose Version, aber da uns die Werbung von ihnen früher auf die nerven ging und Trello den lustigeren Namen hatte, haben wir uns gegen Monday entschieden. 
+## Nachweise:
 
-
-## Planung
-
-### Anforderungsanalyse
-Die einzelnen Anforderungen werden in einer Checkliste festgehalten. Für die User Stories erstellten wir ein Word dokument und laden dies in der Karte hoch.
-Beide Schritte waren einfach durchzuführen und wir hatten keine Probleme.
-
-### Projektplanung
-Für die Zeitliche Planung kann man in den Karten jeweils ein Start- und Enddatum hinzufügen sowie den Auftrag einer Person zuweisen. Trello erstellt draufhin automatisch ein Gantt Diagramm
-
-### Risikobewertung
-Für eine SWOT analyse müssen wir eine Datei hochladen, beispielsweise Word oder Excel. Tabellen können im Tool selbst nicht erstellt werden.
-
-### Definition von Leistungskennzahlen
-Für die Darstellung des KPI bietet die Software ebenfalls keine eigene Lösung an.
-
-### Entwurf der Softwarearchitektur
-Für diesen Schritt muss ebenfalls eine Datei hinzugefügt werden, da das Tool selbst keine Lösung anbietet.
-
-### Entwicklung eines Prototyps oder MVP
-Im Tool kann nichts entwickelt werden.
-
-### Teamzusammenstellung und Rollenzuweisung
-Man kann Personen mit einem Account hinzufügen und ihnen Karten zuweisen, bei der kostenlosen Version jedoch nur für bis zu zehn Personen.
-
-### Erstellen eines Kommunikationsplans
-Kommunikation ist im Tool nicht möglich.
-
-### Tools und Infrastruktur planen
-
-### Stakeholder-Management
+![Bild von Trello Bord](./images/Trello_Board.jpg)
