@@ -9,8 +9,10 @@
 - [Build](#build)
 
 # Ausgangslage
-Wir haben aktuelle eine Kalenderapp wo man einfach Kalendereinträge machen kann. Die Nutzer wünschen sich nun, dass man mehrere Personen im Kalender hinterlegen kann und dann jedem Termin diesen Personen zuweisen kann. So können mehrere Personen den gleichen Kalender nutzen ohne den Überblick zu verlieren wer welchen Termin hat.
-
+Wir haben uns von ChatGPT eine kleine ToDo Liste App, welche nur aus einem HTML File besteht, aber trotzdem die Basisfunktionen besitzt. 
+Man hat ein Eingabefeld, wo man Todo's eingeben kann und am unteren Ende wird dann dieses Todo eingefügt. Man kann das ToDo wieder löschen sobald man es erledigt hat.
+Logischerweise ist diese App noch ausbaufähig und deswegen wollen wir das Design überarbeiten. Nämlich stimmen noch einige grössen der Buttons noch nicht und die App ist auch nicht
+auf dem Handy gut nutzbar. Deswegen wollen wir einen Sprint machen, wo wir genau diese Issue tackeln. 
 
 
 # Versionsverwaltung
@@ -50,7 +52,40 @@ Monday.com: Hat ebenfalls eine kostenlose Version, aber da uns die Werbung von i
 
 # Code
 
+## Semantic Versioning
+Unter semantic Versioning (kurz SemVer) versteht man die Versionierung mittels
+Major.Minor.Patch (z.B. 1.2.0).
+Was diese Begriffe bedeuten findet man auf semver.org:
+MAJOR wird erhöht, wenn API-inkompatible Änderungen veröffentlicht werden
+MINOR wird erhöht, wenn neue Funktionalitäten, die kompatibel zur bisherigen API sind, veröffentlicht werden,
+PATCH wird erhöht, wenn die Änderungen ausschließlich API-kompatible Bugfixes umfassen.
+
+## Conventional Commits
+Conventional Commits sind ein Leitfaden, um verständliche und einheitliche Commit Messages zu schreiben.
+Der empfohlene Aufbau ist wie folgt:
+
+```
+<type>[optional scope]: <description>
+[optional body]
+[optional footer(s)]
+```
+
+
+Es gibt zwei Typen, Fix, welcher einen Bug fixed und im Bezug auf SemVer den Patch erhöht
+und Feat, also kurz für Feature, was einen Minor change darstellt.
+Andere empfohlene Typen sind build:, chore:, ci:, docs:, style:, refactor:, perf:, test:
+
+
 # Build
+## Kurzbeschreibung der verwendeten Apps/Tools:
+Wir haben für die Phase Build
+## Begründung der Wahl dieser Tools:
+
+## Erfahrungen mit den gewählten Tools:
+## Reflexion:
+## Alternative Tools:
+## Nachweise:
+
 
 
 
