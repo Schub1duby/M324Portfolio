@@ -3,7 +3,7 @@ name: Deploy HTML to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Deployment wird ausgelöst, wenn auf main gepusht wird
 
 permissions:
   contents: read
@@ -12,7 +12,10 @@ permissions:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages  
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
