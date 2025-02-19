@@ -46,8 +46,22 @@
             margin: 5px 0;
             padding: 8px;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             border-radius: 4px;
+        }
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .description {
+            display: none;
+            margin-top: 5px;
+            background: #f9f9f9;
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 0.9em;
         }
         .delete {
             background: red;
@@ -63,6 +77,7 @@
 <div class="container">
     <h2>To-Do Liste</h2>
     <input type="text" id="taskInput" placeholder="Neue Aufgabe...">
+    <input type="text" id="descInput" placeholder="Beschreibung...">
     <button onclick="addTask()">Hinzufügen</button>
     <ul id="taskList"></ul>
 </div>
@@ -70,18 +85,36 @@
 <script>
     function addTask() {
         let taskInput = document.getElementById("taskInput");
+        let descInput = document.getElementById("descInput");
         let taskList = document.getElementById("taskList");
 
         if (taskInput.value.trim() === "") return;
 
         let li = document.createElement("li");
-        li.innerHTML = `${taskInput.value} <button class='delete' onclick='removeTask(this)'>X</button>`;
+        li.innerHTML = `
+                <div class='task-header' onclick='toggleDescription(this)'>
+                    <span>${taskInput.value}</span>
+                    <button class='delete' onclick='removeTask(event, this)'>X</button>
+                </div>
+                <div class='description'>${descInput.value}</div>
+            `;
         taskList.appendChild(li);
         taskInput.value = "";
+        descInput.value = "";
     }
 
-    function removeTask(button) {
-        button.parentElement.remove();
+    function removeTask(event, button) {
+        event.stopPropagation();
+        button.closest("li").remove();
+    }
+
+    function toggleDescription(element) {
+        let description = element.nextElementSibling;
+        if (description.style.display === "block") {
+            description.style.display = "none";
+        } else {
+            description.style.display = "block";
+        }
     }
 </script>
 </body>
