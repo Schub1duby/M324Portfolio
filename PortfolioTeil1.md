@@ -1,5 +1,13 @@
 # M324Portfolio
 
+# Inhaltsverzeichnis
+
+- [Ausgangslage](#ausgangslage)
+- [Versionsverwaltung](#versionsverwaltung)
+- [Planung](#planung)
+- [Code](#code)
+- [Build](#build)
+
 # Ausgangslage
 Wir haben aktuelle eine Kalenderapp wo man einfach Kalendereinträge machen kann. Die Nutzer wünschen sich nun, dass man mehrere Personen im Kalender hinterlegen kann und dann jedem Termin diesen Personen zuweisen kann. So können mehrere Personen den gleichen Kalender nutzen ohne den Überblick zu verlieren wer welchen Termin hat.
 
