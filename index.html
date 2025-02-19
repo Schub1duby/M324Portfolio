@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Liste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input {
+            width: calc(100% - 22px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 8px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #ddd;
+            margin: 5px 0;
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 4px;
+        }
+        .delete {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>To-Do Liste</h2>
+    <input type="text" id="taskInput" placeholder="Neue Aufgabe...">
+    <button onclick="addTask()">Hinzufügen</button>
+    <ul id="taskList"></ul>
+</div>
+
+<script>
+    function addTask() {
+        let taskInput = document.getElementById("taskInput");
+        let taskList = document.getElementById("taskList");
+
+        if (taskInput.value.trim() === "") return;
+
+        let li = document.createElement("li");
+        li.innerHTML = `${taskInput.value} <button class='delete' onclick='removeTask(this)'>X</button>`;
+        taskList.appendChild(li);
+        taskInput.value = "";
+    }
+
+    function removeTask(button) {
+        button.parentElement.remove();
+    }
+</script>
+</body>
+</html>

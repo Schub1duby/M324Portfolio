@@ -1,11 +1,11 @@
 # M324Portfolio
 
-## Ausgangslage
+# Ausgangslage
 Wir haben aktuelle eine Kalenderapp wo man einfach Kalendereinträge machen kann. Die Nutzer wünschen sich nun, dass man mehrere Personen im Kalender hinterlegen kann und dann jedem Termin diesen Personen zuweisen kann. So können mehrere Personen den gleichen Kalender nutzen ohne den Überblick zu verlieren wer welchen Termin hat.
 
 
 
-## Versionsverwaltung
+# Versionsverwaltung
 
 Man nutzt Versionsverwaltungen um Codestände zu speichern und auf keinen Fall den Code zu verlieren. Falls mal jemand ein Feature einbaut
 welches die ganze Applikation lahm legt, kann man relativ schnell und einfach wieder auf einen älteren funktionalen Stand zurückgehen.
@@ -39,3 +39,8 @@ Monday.com: Hat ebenfalls eine kostenlose Version, aber da uns die Werbung von i
 ## Nachweise:
 
 ![Bild von Trello Bord](./images/Trello_Board.jpg)
+
+# Code
+
+# Build
+
