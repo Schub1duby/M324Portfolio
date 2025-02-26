@@ -459,7 +459,6 @@ Link zur Github Page: https://schub1duby.github.io/M324Portfolio/
 
 ## Sonstige Verweise
 - Die Rechtschreibung wurde mithilfe von ChatGPT kontrolliert. Sämtliche Passagen wurden aber selbst formuliert
-- 
 
 
 
