@@ -1,18 +1,25 @@
 # M324Portfolio
 
+![Bild von DevOps](https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/6453f14b83b4a36b72707435_7602%201.png)
+
+*Quelle: [Aloa.com](https://aloa.co/blog/what-is-devops)*
 # Inhaltsverzeichnis
 
-- [Ausgangslage](#ausgangslage)
-- [Versionsverwaltung](#versionsverwaltung)
-- [DevOps](#devops)
-- [Planung](#planung)
-- [Code](#code)
-- [Build](#build)
+- [1 Ausgangslage](#1-ausgangslage)
+- [2 Versionsverwaltung](#2-versionsverwaltung)
+- [3 DevOps](#3-devops)
+- [4 Planung](#4-planung)
+- [5 Code](#5-code)
+- [6 Build](#6-build)
+- [7 Aufteilung der Arbeiten](#7-aufteilung-der-arbeiten)
+- [Quellenverzeichnis](#quellenverzeichnis)
 
 ## Disclaimer
 Falls ein Bild nicht geladen werden sollte bei den Nachweisen, haben wir im Ordner Images noch die einzelnen Bilder separat eingebettet.
 
-# Ausgangslage
+
+
+# 1 Ausgangslage
 Wir haben uns von ChatGPT eine kleine ToDo Liste App, welche nur aus einem HTML File besteht, aber trotzdem die Basisfunktionen besitzt. 
 Man hat ein Eingabefeld, wo man Todo's eingeben kann und am unteren Ende wird dann dieses Todo eingefügt. Man kann das ToDo wieder löschen sobald man es erledigt hat.
 Logischerweise ist diese App noch ausbaufähig und deswegen wollen wir das Design überarbeiten. Nämlich stimmen noch einige grössen der Buttons noch nicht und die App ist auch nicht
@@ -115,35 +122,34 @@ Hier ist noch der Source Code dieser einfachen Applikation:
 
 
 
-# Versionsverwaltung
+# 2 Versionsverwaltung
 
-Man nutzt Versionsverwaltungen um Codestände zu speichern und auf keinen Fall den Code zu verlieren. Falls mal jemand ein Feature einbaut
-welches die ganze Applikation lahm legt, kann man relativ schnell und einfach wieder auf einen älteren funktionalen Stand zurückgehen.
+Man nutzt Versionsverwaltungen, um Codestände zu speichern und auf keinen Fall den Code zu verlieren. Falls mal jemand ein Feature einbaut
+welches die ganze Applikation lahmlegt, kann man relativ schnell und einfach wieder auf einen älteren funktionalen Stand zurückgehen.
 Der Branchenstandard für Versionsverwaltungen ist Git.
 
-# DevOps
+# 3 DevOps
 DevOps ist eine neu aufkommende Kultur und Methodik in IT Unternehmen. Es sagt die Verschmelzung der beiden Begriffe Development und Operations. 
-Die Idee ist, dass die Mitarbeiter sich um beide Seiten der Software kümmern. Man arbeitet pro Sprint 8 Phasen durch welche mit der Planung, über die Entwicklung und Testing bis zu Deployment alles umfassen.
-Meistens wird DevOps mit einer Unendlichkeitsacht dargestellt.
+Die Idee ist, dass die Mitarbeiter sich um beide Seiten der Software kümmern. Man arbeitet pro Sprint 8 Phasen durch, welche mit der Planung, über die Entwicklung und das Testing bis zum Deployment alles umfassen.
+Meistens wird DevOps mit einer liegenden Acht dargestellt.
 
 Unter DevOps sind folgende Praktiken verbreitet:
-- CI/CD (Continious Integration/Continious Deployment): Es wird fortlaufend Entwickelt, das entwickelte wird fortlaufend getestet. In kleinen Häppchen werden dass auf Testsysteme integriert und diese kleinen Häppchen werden dann auch fortlaufend Deployt.
-Man will immer wieder fortlaufend und in kleinen Schritten deployen, weil dann kann man sehr schnell allfällige Fehler lokalisieren und auch beheben.
+- CI/CD (Continuous Integration/Continuous Deployment): Es wird fortlaufend entwickelt, das entwickelte wird fortlaufend getestet. In kleinen Häppchen werden dass auf Testsysteme integriert und diese kleinen Häppchen werden dann auch fortlaufend Deployt.
+  Man will immer wieder fortlaufend und in kleinen Schritten deployen, weil man dann sehr schnell allfällige Fehler lokalisieren und auch beheben kann.
 - Infrastructure as Code (IaC) ist eine Methode, um IT-Infrastruktur wie Server, Netzwerke und Speicher mithilfe von Code zu definieren, bereitzustellen und zu verwalten, anstatt sie manuell zu konfigurieren. Dies ermöglicht Automatisierung, Skalierbarkeit und Wiederholbarkeit, indem Infrastruktur wie Software behandelt und versioniert wird
 - DevOps ist dafür ausgelegt um mit agilen Methoden zu arbeiten. Deswegen sind Methoden wie Scrum und oder Kanban ein absolutes Muss. 
 
-# Planung
+# 4 Planung
 
 ## Kurzbeschreibung der verwendeten Apps/Tools:
 Trello ist ebenfalls ein Tool von Atlassian, welches jedoch neben den kostenpflichtigen Varianten eine kostenlose anbietet. Diese beinhaltet wie die kostenpflichtige Variante Automatisierung und Boards, ist jedoch nur für Teams bis zu zehn Personen nutzbar und hat nicht alle Ansichten, die die premium Version bietet.
 ## Begründung der Wahl dieser Tools:
 Wir haben uns für Trello entschieden, da das Tool relativ übersichtlich und schlank aussieht. Uns hat interessiert ob so ein schlankes Tool die nötigen Anforderungen erfüllen kann.
-Wir hatten noch Klipfolio und Confluence im Auge aber entweder haben die Tools keine kostenfreie Version oder wir verwenden die Tools bereits in unseren Betrieb. 
-
+Wir hatten noch Klipfolio und Confluence im Auge, aber entweder haben die Tools keine kostenfreie Version oder wir verwenden die Tools bereits in unserem Betrieb.
 ## Erfahrungen mit den gewählten Tools:
 Wir haben eine positive Erfahrung mit Trello gemacht. Es ist ein Tool, welches relativ schlank ist aber genug an Features bietet. Aus unserer Sicht es perfekt geeignet für den persönlichen Gebrauch 
 oder in kleinen Teams. Für grosse Teams hat es ein wenig zu wenig Features bzw. wird dann mit der Zeit ein wenig zu unübersichtlich. 
-Das generelle Feeling und arbeiten mit dem Tool war sehr angenehm und intuitiv. Wir konnten sehr schnell ein Board erstellen und auch darauf Items platzieren und diese dann auch herumschieben. Wir fanden vor allem das Feature dass man Items Zeitlich begrenzen kann und sie dann auch in einer Kalenderansicht anschauen kann. 
+Das generelle Feeling und arbeiten mit dem Tool war sehr angenehm und intuitiv. Wir konnten sehr schnell ein Board erstellen und auch darauf Items platzieren und diese dann auch herumschieben. Wir fanden vor allem ein Feature, dass man Items zeitlich begrenzen kann und sie dann auch in einer Kalenderansicht anschauen kann sehr sinnvoll. 
 So kann man schnell ansehen welche Items wann fällig sind. 
 ## Reflexion:
 Die generellen Grundfunktionen laufen in diesem Tool einwandfrei. Die Bedienung des Boards ist einfach und funktioniert einwandfrei. Es fehlt uns aber ein wenig an zusätzlichen Funktionen. Z. B. kann man nicht richtig in Sprints und nach allgemeinen Scrum Prinzipien arbeiten. Diese Dinge müsste man separat managen. Ausserdem kann man 
@@ -157,7 +163,8 @@ Monday.com: Hat ebenfalls eine kostenlose Version, aber da uns die Werbung von i
 ## Nachweise:
 
 ![Bild von Trello Bord](https://i.imgur.com/bDV2NVv.jpeg)
-# Code
+
+# 5 Code
 
 ## Semantic Versioning
 Unter semantic Versioning (kurz SemVer) versteht man die Versionierung mittels
@@ -368,7 +375,7 @@ Neben Github beziehungsweise Git allgemein gäbe es noch Subversion, welches abe
 Da wir dies jedoch machen wollten, schied Subversion von Anfang an bereits aus.
 
 
-# Build
+# 6 Build
 ## Kurzbeschreibung der verwendeten Apps/Tools:
 Wir haben für die Phase Build Github bzw. Github Pages und Github Actions verwendet. Mit Github Pages kann man sehr schnell und einfach seine HTML Seite über
 Github hosten. So kann man sehr einfach auch die Website auch auf dem Handy, Tablet oder anderen Geräten aufrufen und selbst testen. 
@@ -419,22 +426,40 @@ jobs:
         uses: actions/deploy-pages@v4
 
 ```
-Sobald ich jetzt eine neue Version meiner App pushe wir diese Automatisch auf meine GitHub page deployt, sofern das Setup der Pages und uploaden der Artifacts funktioniert. Ansonsten wird die Pipeline abbgebrochen.
+Sobald ich jetzt eine neue Version meiner App pushe, wird diese automatisch auf meine GitHub Page deployt, sofern das Setup der Pages und uploaden der Artifacts funktioniert. Ansonsten wird die Pipeline abbgebrochen.
 Allgemein waren unsere Erfahrungen überraschend positiv. Wir hätten uns das viel komplizierter vorgestellt. Wir hatten in einer knappen halben Stunde diese Pipeline + Page zusammen und können jetzt CI/CD betreiben.
 
 ## Reflexion:
-Ganz allgemein ging diese Phase extrem gut vonstatten. Wir hatten kaum Schwierigkeiten und es lief alles wie am Schnürchen. Wir vertrödelten auch kaum Zeit, was auch daran liet, dass GitHub uns mit Pages und Actions eine sehr gut Möglichkeit biete soetwas umzusetzen.
-Logischerweise haben wir hier eine sehr einfach Ausführung und man könnte es noch viel komplizierter erweitern, aber trotzdem haben wir extrem schnell das Grundgerüst erstellen können. 
-Falls wir irgendwann mal wieder ein Projekt auf GitHub aufsetzen sollen, werden wir definitiv Actions konfigurieren um den Workflow zu verbessern und automatische Tests einzufügen. 
+Ganz allgemein ging diese Phase extrem gut vonstatten. Wir hatten kaum Schwierigkeiten und es lief alles wie am Schnürchen. Wir vertrödelten auch kaum Zeit, was auch daran lag, dass GitHub uns mit Pages und Actions eine sehr gute Möglichkeit bietet, so etwas umzusetzen.
+Logischerweise haben wir hier eine sehr einfach Ausführung und man könnte es noch viel komplizierter erweitern, aber trotzdem haben wir extrem schnell das Grundgerüst erstellen können.
+Falls wir irgendwann mal wieder ein Projekt auf GitHub aufsetzen sollen, werden wir definitiv Actions konfigurieren, um den Workflow zu verbessern und automatische Tests einzufügen.
 ## Alternative Tools:
-- Gitlab CI/CD: Das Pendant zu GitHub Actions von Gitlab. Das ist aber mehr limitiert im kostenlosen Plan wie Github Actions
-- Jenkins: Eines der ältesten CI/CD Tools, welches sehr anpassbar und Open Source nutzbar ist. Leider ist es dafür sehr Wartungsintensiv. 
+- Gitlab CI/CD: Das Pendant zu GitHub Actions von Gitlab. Das ist aber stärker limitiert im kostenlosen Plan als GitHub Actions.
+- Jenkins: Eines der ältesten CI/CD Tools, welches sehr anpassbar und Open Source nutzbar ist. Leider ist es dafür sehr wartungsintensiv.. 
 - Travis CI: Ist ein Cloudbasiertes CI/CD Tool, welches sehr beliebt war, aber an Bedeutung verloren hat. Es lässt sich sehr einfach konfigurieren und gut integrieren mit GitHub. Die Kommerzielle Version ist aber sehr teuer. 
 
 ## Nachweise:
 ![Bild der GitHub Actions](https://i.imgur.com/8EX3oFP.jpeg)
 
 Link zur Github Page: https://schub1duby.github.io/M324Portfolio/
+
+# 7 Aufteilung der Arbeiten
+| Kapitel           | Larissa                                                    | Cyrill                                                                                                  |
+|-------------------|------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Ausgangslage      | Formulieren des Textes                                     | Bereitstellung des Codes mithilfe von ChatGPT                                                           |
+| Git/Devops        | Text Git schreiben                                         | Text DevOps schreiben                                                                                   |
+| Plan              | Aufsetzen von Trello Board und primäres praktisches Testen | Formulieren der Erfahrungen in Textform                                                                 |
+| Code              | Formulieren des Textes                                     | /                                                                                                       |
+| Build             | /                                                          | Primäres durchführen und bereitstellen der GitHub Page und Action und formulieren der Erfahrungen damit |
+| Sonstige Arbeiten | Rechtschreibecheck durchführen mit ChatGPT                 | Einfügen der Bilder in Markdown und aufsetzen des Quellenverzeichnisses                                 |
+
+# Quellenverzeichnis
+## Bildquellen
+- Aloa. (o. D.). What is DevOps? Abgerufen am [26.02.2025], von https://aloa.co/blog/what-is-devops
+
+## Sonstige Verweise
+- Die Rechtschreibung wurde mithilfe von ChatGPT kontrolliert. Sämtliche Passagen wurden aber selbst formuliert
+- 
 
 
 
