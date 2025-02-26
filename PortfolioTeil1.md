@@ -4,9 +4,13 @@
 
 - [Ausgangslage](#ausgangslage)
 - [Versionsverwaltung](#versionsverwaltung)
+- [DevOps](#devops)
 - [Planung](#planung)
 - [Code](#code)
 - [Build](#build)
+
+## Disclaimer
+Falls ein Bild nicht geladen werden sollte bei den Nachweisen, haben wir im Ordner Images noch die einzelnen Bilder separat eingebettet.
 
 # Ausgangslage
 Wir haben uns von ChatGPT eine kleine ToDo Liste App, welche nur aus einem HTML File besteht, aber trotzdem die Basisfunktionen besitzt. 
@@ -117,10 +121,18 @@ Man nutzt Versionsverwaltungen um Codestände zu speichern und auf keinen Fall d
 welches die ganze Applikation lahm legt, kann man relativ schnell und einfach wieder auf einen älteren funktionalen Stand zurückgehen.
 Der Branchenstandard für Versionsverwaltungen ist Git.
 
+# DevOps
+DevOps ist eine neu aufkommende Kultur und Methodik in IT Unternehmen. Es sagt die Verschmelzung der beiden Begriffe Development und Operations. 
+Die Idee ist, dass die Mitarbeiter sich um beide Seiten der Software kümmern. Man arbeitet pro Sprint 8 Phasen durch welche mit der Planung, über die Entwicklung und Testing bis zu Deployment alles umfassen.
+Meistens wird DevOps mit einer Unendlichkeitsacht dargestellt.
 
+Unter DevOps sind folgende Praktiken verbreitet:
+- CI/CD (Continious Integration/Continious Deployment): Es wird fortlaufend Entwickelt, das entwickelte wird fortlaufend getestet. In kleinen Häppchen werden dass auf Testsysteme integriert und diese kleinen Häppchen werden dann auch fortlaufend Deployt.
+Man will immer wieder fortlaufend und in kleinen Schritten deployen, weil dann kann man sehr schnell allfällige Fehler lokalisieren und auch beheben.
+- Infrastructure as Code (IaC) ist eine Methode, um IT-Infrastruktur wie Server, Netzwerke und Speicher mithilfe von Code zu definieren, bereitzustellen und zu verwalten, anstatt sie manuell zu konfigurieren. Dies ermöglicht Automatisierung, Skalierbarkeit und Wiederholbarkeit, indem Infrastruktur wie Software behandelt und versioniert wird
+- DevOps ist dafür ausgelegt um mit agilen Methoden zu arbeiten. Deswegen sind Methoden wie Scrum und oder Kanban ein absolutes Muss. 
 
 # Planung
-
 
 ## Kurzbeschreibung der verwendeten Apps/Tools:
 Trello ist ebenfalls ein Tool von Atlassian, welches jedoch neben den kostenpflichtigen Varianten eine kostenlose anbietet. Diese beinhaltet wie die kostenpflichtige Variante Automatisierung und Boards, ist jedoch nur für Teams bis zu zehn Personen nutzbar und hat nicht alle Ansichten, die die premium Version bietet.
@@ -144,8 +156,7 @@ Azure DevOps: Auch relativ weit verbreitet und Cyrill kennt bereits das Tool wes
 Monday.com: Hat ebenfalls eine kostenlose Version, aber da uns die Werbung von ihnen früher auf die nerven ging und Trello den lustigeren Namen hatte, haben wir uns gegen Monday entschieden. 
 ## Nachweise:
 
-![Bild von Trello Bord](./images/Trello_Board.jpg)
-
+![Bild von Trello Bord](https://i.imgur.com/bDV2NVv.jpeg)
 # Code
 
 ## Semantic Versioning
@@ -421,7 +432,9 @@ Falls wir irgendwann mal wieder ein Projekt auf GitHub aufsetzen sollen, werden 
 - Travis CI: Ist ein Cloudbasiertes CI/CD Tool, welches sehr beliebt war, aber an Bedeutung verloren hat. Es lässt sich sehr einfach konfigurieren und gut integrieren mit GitHub. Die Kommerzielle Version ist aber sehr teuer. 
 
 ## Nachweise:
+![Bild der GitHub Actions](https://i.imgur.com/8EX3oFP.jpeg)
 
+Link zur Github Page: https://schub1duby.github.io/M324Portfolio/
 
 
 
