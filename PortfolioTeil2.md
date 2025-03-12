@@ -8,6 +8,42 @@
 
 
 # 1 Test
+Wie der Name schon sagt werden in dieser Phase unterschiedliche Aspekte getestet.
+Der Fokus  liegt auf der Qualitätssicherung der Software. Nachfolgend werden die vier Testarten erläutert und eine Vermutung aufgestellt, in welcher Phase welcher Test durchgeführt wird.
+## Unit-Test
+Ein Unit-Test testet die kleinsten Komponenten der Software, beispielsweise Methoden und Klassen.
+Diese können isoliert getestet werden und sind die als erstes durchgeführten Tests, welche unserer Vermutung nach in der Phase "Build" gestartet werden, da bei uns in der Firma dies unter "Maven Build" integriert ist.
+
+## Integrations-Test
+Diese prüfen das Zusammenspiel mehrerer Komponenten sowie die Schnittstellen. Wir vermuten, dies wird ebenfalls in der Phase "Build" erledigt, da dies ebenfalls durch den "Maven Build" Befehl durchgeführt wird.
+
+## System-Test
+Systemtests testen das Funktionieren einer Lauffähigen Applikation sowie dessen Abhängigkeiten, Datenintegrität und Kommunikation.
+Diese Tests werden mutmasslich unter "Test" durchgeführt, da wir nicht wissen, wo dies sonst einortbar wäre.
+
+## Akzeptanz-Test
+Dieser Test wird durch den Kunden ausgeführt und überprüft ob die Endnutzer zufrieden mit dem Projekt sind. Hier vermuten wir, dass dieser Test während der Deploy-Phase durchgeführt wird, da in dieser schon alles laufen sollte, aber noch nichts Released wurde
+
+## Überprüfen der Vermutungen
+Wir führten folgende Unterhaltung mit ChatGPT o3-mini-high, da diese Version Reasoning beherrscht und sich somit selbst überprüft vor der Finalen Antwort.
+
+Prompt:
+> In welcher der acht DevOps Phasen werden welche Testarten (Unit-, Integration-, System- und Akzeptanztest) ausgeführt und wieso? Fasse dich kurz sofern möglich
+
+Reasoning:
+> In DevOps werden Tests in den verschiedenen Phasen wie folgt durchgeführt:
+> - Unit-Tests: In der Code-/Build-Phase, da sie schnell laufen und die Korrektheit von Einzelkomponenten überprüfen.
+> - Integrationstests: In der Test-Phase (oder auch in der Build-Phase bei kontinuierlicher Integration), um die Interaktionen zwischen Modulen zu testen.
+> - Systemtests: Ebenfalls in der Test-Phase, um die Gesamtfunktionalität des Systems zu validieren.
+> - Akzeptanztests: In der Release- oder Deploy-Phase, um zu prüfen, ob das Produkt die Anforderungen erfüllt.
+
+Antwort:
+> In den frühen Phasen – also während des Codings und Builds – werden Unit-Tests durchgeführt, um einzelne Funktionen isoliert zu prüfen. In der Test-Phase laufen Integrationstests, die das Zusammenspiel der Module sicherstellen, sowie Systemtests, die das Verhalten des gesamten Systems validieren. Abschließend, meist in der Release-Phase, erfolgen Akzeptanztests, um zu bestätigen, dass die Software die Anforderungen der Anwender erfüllt. Diese Aufteilung ermöglicht es, Fehler früh zu erkennen und den gesamten Entwicklungszyklus effizient abzusichern.
+
+### Überprüfung der gelieferten Informationen
+In der heutigen Zeit ist es ziemlich Schwierig, mit Google gescheite Informationen zu Finden. Am besten Erklärt hatt der folgende Artikel: https://www.nagler-company.com/de/unternehmen/aktuelles/artikel-anzeigen/automatisiertes-testen-im-devops-umfeld.html
+Dieser schreibt, dass Unit-Tests in der Build-Phase, Integrations-Tests sowie System-Tests in der Test-Phase, und die Akzeptanztests in der Deploy-Phase durchgeführt werden. Weiter überprüfen konnte ich diesen Artikel jedoch nicht, da die referenzierten Artikel nicht mehr existieren.
+Willkommen in der Google suche 2025...
 
 # 2 Release
 
