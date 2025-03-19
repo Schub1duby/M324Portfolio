@@ -1,3 +1,8 @@
+# Portfolio Teil 2
+
+![Bild von DevOps](https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/6453f14b83b4a36b72707435_7602%201.png)
+
+
 # Inhaltsverzeichnis
 
 - [1 Test](#1-test)
@@ -9,7 +14,7 @@
 
 # 1 Test
 Wie der Name schon sagt werden in dieser Phase unterschiedliche Aspekte getestet.
-Der Fokus  liegt auf der Qualitätssicherung der Software. Nachfolgend werden die vier Testarten erläutert und eine Vermutung aufgestellt, in welcher Phase welcher Test durchgeführt wird.
+Der Fokus liegt auf der Qualitätssicherung der Software. Nachfolgend werden die vier Testarten erläutert und eine Vermutung aufgestellt, in welcher Phase welcher Test durchgeführt wird.
 ## Unit-Test
 Ein Unit-Test testet die kleinsten Komponenten der Software, beispielsweise Methoden und Klassen.
 Diese können isoliert getestet werden und sind die als erstes durchgeführten Tests, welche unserer Vermutung nach in der Phase "Build" gestartet werden, da bei uns in der Firma dies unter "Maven Build" integriert ist.
@@ -19,7 +24,7 @@ Diese prüfen das Zusammenspiel mehrerer Komponenten sowie die Schnittstellen. W
 
 ## System-Test
 Systemtests testen das Funktionieren einer Lauffähigen Applikation sowie dessen Abhängigkeiten, Datenintegrität und Kommunikation.
-Diese Tests werden mutmasslich unter "Test" durchgeführt, da wir nicht wissen, wo dies sonst einortbar wäre.
+Diese Tests werden mutmasslich unter "Test" durchgeführt, da wir nicht wissen, wo dies sonst einordbar wäre.
 
 ## Akzeptanz-Test
 Dieser Test wird durch den Kunden ausgeführt und überprüft ob die Endnutzer zufrieden mit dem Projekt sind. Hier vermuten wir, dass dieser Test während der Deploy-Phase durchgeführt wird, da in dieser schon alles laufen sollte, aber noch nichts Released wurde
@@ -101,7 +106,7 @@ Somit mussten wir nur ein dreizeiliges Dockerfile und ein kurzes Docker Compose 
 ## Erfahrungen mit den gewählten Tools
 Cyrill hatte schon einige Erfahrungen mit Docker auch von der betrieblichen Seite aus, Larissa hatte nur Vorkenntnisse, welche den Unterrichtsstoff umfassen. Trotzdem konnten beide relativ schnell diese beiden Files zusammenstellen.
 Ohne Vorkenntnisse wäre dies natürlich nicht so einfach, aber man sieht hier, dass man wirklich nicht viel Vorkenntnisse benötigt um hier ein Image erstellen zu können. Mit docker compose hat man auch uns unserer Sicht einen relativ intuitiven Weg das Image automatisiert laufen lassen zu können
-ohne immer wieder die Commands, in die Shell, eingeben zu müssen. Die einzige Vorraussetzung ist, dass man die Yaml Syntax verstehen muss, was jetzt aus unserer Sicht nicht die Welt ist. 
+ohne immer wieder die Commands, in die Shell, eingeben zu müssen. Die einzige Voraussetzung ist, dass man die Yaml Syntax verstehen muss, was jetzt aus unserer Sicht nicht die Welt ist. 
 
 
 ## Reflexion
@@ -134,7 +139,7 @@ welcher automatisch die Applikation dann deployt, wenn eine neue Version auf dem
 
 Wichtig ist, dass man bei den Build Options HTML angibt und da unsere Applikation in diesem Fall auf dem root Verzeichnis liegt, auch das root Verzeichnis angibt.
 Danach muss man noch erstellen klicken und dann wird nach 1-2 Minuten die Applikation deployt und alles läuft wie geschmiert. 
-Die Applikation ist unter folgenden Link Verfügbar [TodoListApp](https://calm-moss-03f0e8d10.6.azurestaticapps.net/)
+Die Applikation ist unter folgenden Link verfügbar [TodoListApp](https://calm-moss-03f0e8d10.6.azurestaticapps.net/)
 ## Verwendete Apps/Tools
 Wir haben Azure Verwendet. 
 Wir haben mal ChatGPT gefragt, was die Vorteile von Azure sind:
@@ -167,11 +172,19 @@ Grundsätzlich funktionieren die sehr ähnlich und bieten auch unterschiedliche 
 # 4 Aufteilung der Arbeiten
 | Kapitel           | Larissa                                                            | Cyrill                                                                           |
 |-------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Test              | Formulieren des Textes                                             | Bereitstellung des Codes mithilfe von ChatGPT                                    |
+| Test              | Formulieren des Textes                                             | Recherche von Larissa überprüft                                                  |
 | Release           | Schreiben der Docker Files + Dokumentation mit mehr Fokus auf Doku | Schreiben der Docker Files + Dokumentation mit vermehrten Fokus auf Docker Files |
 | Deploy            | Formulieren der Texte im Portfolio                                 | Aufsetzen der Static Web App                                                     |
-| Sonstige Arbeiten | Rechtschreibecheck durchführen mit ChatGPT                         | Aufsetzen des Markdowns mit Inhaltsverzeichnis und Quellenverzeichnis            |
+| Sonstige Arbeiten | Rechtschreibscheck durchführen mit ChatGPT                         | Aufsetzen des Markdowns mit Inhaltsverzeichnis und Quellenverzeichnis            |
 
 
 # Quellenverzeichnis
-- https://www.it-visions.de/%7B3D420996-D223-43CB-84CD-04341518483A%7D.aspx
+- It-Visions.ch, Dr. Holger Schwichtenberg, Was ist ein Hyper-V-Container, o.D.,https://www.it-visions.de/%7B3D420996-D223-43CB-84CD-04341518483A%7D.aspx
+- Nagler & Company, Thomas Weisshaar, Automatisiertes Testen im DevOps Umfeld, 1.12.2022, https://www.nagler-company.com/de/unternehmen/aktuelles/artikel-anzeigen/automatisiertes-testen-im-devops-umfeld.html
+- 
+## Bildquellen
+- **Titelbild:** Geekflare, die 6 besten Tools zur Konfigurationsverwaltung in DevOps, 22.01.2025, https://geekflare.com/de/config-management-tools/
+
+## KI Verzeichnis
+- ChatGPT Modell 4o, 12.03.2025, ![ChatGPT Prompt zu den Vor/Nachteilen von MS Azure](https://i.imgur.com/ejtCBwK.jpeg)
+- 

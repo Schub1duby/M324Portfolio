@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93e49a3-8c69-46d4-b682-571f48553bb6" name="Changes" comment="chore: clean up the document and make it ready for handin">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortfolioTeil2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/github_action.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imagesTeil1/github_action.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/trello_board.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imagesTeil1/trello_board.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +45,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -187,7 +185,12 @@
       <workItem from="1740487806473" duration="15672000" />
       <workItem from="1741338358759" duration="1150000" />
       <workItem from="1741687517103" duration="1155000" />
-      <workItem from="1741772638291" duration="4936000" />
+      <workItem from="1741772638291" duration="5025000" />
+      <workItem from="1741778695748" duration="27000" />
+      <workItem from="1741778772014" duration="222000" />
+      <workItem from="1741814277354" duration="2292000" />
+      <workItem from="1741939842778" duration="50000" />
+      <workItem from="1742368818969" duration="1018000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add gitignore">
       <option name="closed" value="true" />
