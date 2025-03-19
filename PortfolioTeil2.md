@@ -315,7 +315,10 @@ Grundsätzlich funktionieren die sehr ähnlich und bieten auch unterschiedliche 
 # Quellenverzeichnis
 - It-Visions.ch, Dr. Holger Schwichtenberg, Was ist ein Hyper-V-Container, o.D.,https://www.it-visions.de/%7B3D420996-D223-43CB-84CD-04341518483A%7D.aspx
 - Nagler & Company, Thomas Weisshaar, Automatisiertes Testen im DevOps Umfeld, 1.12.2022, https://www.nagler-company.com/de/unternehmen/aktuelles/artikel-anzeigen/automatisiertes-testen-im-devops-umfeld.html
-- 
+-  https://jasmine.github.io/pages/getting_started.html
+- https://karma-runner.github.io/latest/index.html
+- https://testing.googleblog.com/2012/11/testacular-spectacular-test-runner-for.html
+- https://www.browserstack.com/guide/top-javascript-testing-frameworks
 ## Bildquellen
 - **Titelbild:** Geekflare, die 6 besten Tools zur Konfigurationsverwaltung in DevOps, 22.01.2025, https://geekflare.com/de/config-management-tools/
 
