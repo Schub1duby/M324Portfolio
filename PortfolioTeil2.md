@@ -23,7 +23,7 @@ Diese können isoliert getestet werden und sind die als erstes durchgeführten T
 Diese prüfen das Zusammenspiel mehrerer Komponenten sowie die Schnittstellen. Wir vermuten, dies wird ebenfalls in der Phase "Build" erledigt, da dies ebenfalls durch den "Maven Build" Befehl durchgeführt wird.
 
 ## System-Test
-Systemtests testen das Funktionieren einer Lauffähigen Applikation sowie dessen Abhängigkeiten, Datenintegrität und Kommunikation.
+Systemtests testen das Funktionieren einer lauffähigen Applikation sowie dessen Abhängigkeiten, Datenintegrität und Kommunikation.
 Diese Tests werden mutmasslich unter "Test" durchgeführt, da wir nicht wissen, wo dies sonst einordbar wäre.
 
 ## Akzeptanz-Test
@@ -182,7 +182,7 @@ Dies führte zu einem komischen Ergebnis
 Auch lieferte dies keinen Error in der Konsole, und da ich wie bereits erwähnt nicht sonderlich versiert bin mit Javascript, komme ich an diesem Punkt nicht mehr weiter.
 
 ## Reflexion
-Das arbeiten mit dem Gewählten Tool hat für mich so gar nicht funktioniert. Ich hätte mir bessere Rückmeldungen zur Fehlersuche gewünscht, denn ohne diese bin ich aufgeschmissen. Ich denke, wenn man sich in der Thematik besser auskennt, wäre dies weniger ein Problem. Nichtsdestotrotz war es spannend, mal etwas anderes auszuprobieren, auch wenn es schlussendlich nicht funktionierte.
+Das Arbeiten mit dem gewählten Tool hat für mich so gar nicht funktioniert. Ich hätte mir bessere Rückmeldungen zur Fehlersuche gewünscht, denn ohne diese bin ich aufgeschmissen. Ich denke, wenn man sich in der Thematik besser auskennt, wäre dies weniger ein Problem. Nichtsdestotrotz war es spannend, mal etwas anderes auszuprobieren, auch wenn es schlussendlich nicht funktionierte.
 
 # 2 Release
 
@@ -238,13 +238,13 @@ Als Base Image haben wir uns für Apache httpd:alpine entschieden. Einfach aus d
 Somit mussten wir nur ein dreizeiliges Dockerfile und ein kurzes Docker Compose schreiben und schon konnten wir die Applikation als Container zur Verfügung stellen. 
 
 ## Erfahrungen mit den gewählten Tools
-Cyrill hatte schon einige Erfahrungen mit Docker auch von der betrieblichen Seite aus, Larissa hatte nur Vorkenntnisse, welche den Unterrichtsstoff umfassen. Trotzdem konnten beide relativ schnell diese beiden Files zusammenstellen.
-Ohne Vorkenntnisse wäre dies natürlich nicht so einfach, aber man sieht hier, dass man wirklich nicht viel Vorkenntnisse benötigt um hier ein Image erstellen zu können. Mit docker compose hat man auch uns unserer Sicht einen relativ intuitiven Weg das Image automatisiert laufen lassen zu können
+Cyrill hatte bereits einige Erfahrungen mit Docker, auch von der betrieblichen Seite aus. Larissa hatte nur Vorkenntnisse, die den Unterrichtsstoff umfassen. Trotzdem konnten beide relativ schnell diese beiden Files zusammenstellen.
+Ohne Vorkenntnisse wäre dies natürlich nicht so einfach, aber man sieht hier, dass man wirklich nicht viel Vorkenntnisse benötigt um hier ein Image erstellen zu können. Mit Docker Compose hat man auch aus unserer Sicht einen relativ intuitiven Weg das Image automatisiert laufen lassen zu können
 ohne immer wieder die Commands, in die Shell, eingeben zu müssen. Die einzige Voraussetzung ist, dass man die Yaml Syntax verstehen muss, was jetzt aus unserer Sicht nicht die Welt ist. 
 
 
 ## Reflexion
-Wenn man jetzt die Applikation wirklich produktiv auf einem System deployen wollen würde, müsste man natürlich noch vor allem Sicherheitsthemen und andere Dinge berücksichtigen. Diese Dinge haben wir jetzt in diesem Auftrag ein wenig aussem vor gelassen
+Wenn man jetzt die Applikation wirklich produktiv auf einem System deployen wollen würde, müsste man natürlich noch vor allem Sicherheitsthemen und andere Dinge berücksichtigen. Diese Dinge haben wir jetzt in diesem Auftrag ein wenig aussen vor gelassen
 um die Komplexität nicht unnötig zu erhöhen. Beim einem anderen Mal, wo wir vor allem mehr Zeit hätten, würden wir uns auch mehr Zeit nehmen, es mit richtigen Sicherheitsvorgaben und ähnlichem Umzusetzen und Lauffähig zu machen. Man könnte jetzt das Releasen 
 und bauen dieses Images und Container noch mit in die Github Action integrieren und den ganzen Prozess automatisieren.
 
@@ -258,12 +258,11 @@ Hyper-V Container sind in erster Linie nur auf Windows verfügbar (Cyrill verwen
 Quelle: https://www.it-visions.de/%7B3D420996-D223-43CB-84CD-04341518483A%7D.aspx
 
 
-
 # 3 Deploy
 
 Da wir keinen Zugriff auf das AWS lerner Lab hatten, haben wir uns dazu entschieden die Applikation auf Azure zu deployen. 
 Es war eine Tortur bis wir endlich mal einen Account hatten, welcher auch Student Credits drauf hatte. Insgesamt mussten wir ungelogen und 10000x einloggen
-und 400x bestätigen, dass wir auch wirklich Schüler sind und 2 Jahre unserer Lebenszeit aufwenden, bis wir die 100 USD auf unserem Account hatten. 
+und 400x bestätigen, dass wir auch wirklich Schüler sind und zwei Jahre unserer Lebenszeit aufwenden, bis wir die 100 USD auf unserem Account hatten. 
 
 Danach war aber das Deployment sehr einfach. Wir erstellten eine Static WebApp und verknüpften diese mit unserem GitHub Repository, worauf es uns automatisch einen GitHub Workflow erstellte
 welcher automatisch die Applikation dann deployt, wenn eine neue Version auf dem Main Branch commited/gepushed wird. 
@@ -286,18 +285,16 @@ Ausserdem ist die ganze Cloud geschichte nicht besonders billig wie wir vorhin g
 
 ## Erfahrungen mit den gewählten Tools
 Wir beide haben nur sehr wenige Erfahrungen, welche über einen ÜK nicht hinausgehen und würden den Erfahrungsbericht gerne in 2 Teile unterteilen. 
-Bis man endlich Student Credits bekommt braucht man wirklich Geduld und es wird einem extrem viele Steine in den Weg gelegt bis man sie endlich bekommt.
+Bis man endlich Student-Credits bekommt braucht man wirklich Geduld und es wird einem extrem viele Steine in den Weg gelegt bis man sie endlich bekommt.
 Das würden wir von der User Experience als absolut ungenügend beurteilen.
 Wenn man aber das endlich geschafft hat, war es wirklich eine Sache von 2 Minuten bis man die Applikation deployt hat. Da Azure im MS Ökosystem integriert ist, kann man es auch wirklich einfach mit GitHub verknüpfen.
 Klar wir haben eine sehr einfache App und wenn sie ein wenig komplexer ist, braucht man vielleicht ein wenig mehr Zeit, aber wir waren sehr überrascht wie einfach es doch am Ende ging.
 
 
-
-
 ## Reflexion
-Wir haben wirklich gefühlte 2 Jahre Lebenszeit verloren bis wir mal endlich diese Studentcredits bekommen haben. 
+Wir haben gefühlt zwei Jahre Lebenszeit verloren, bis wir endlich diese Student-Credits bekommen haben.. 
 Aber danach ging alles wie vom Schnürchen von statten. Formular ausfüllen bezüglich der Static Web App, ein wenig den Kopf einschalten bei den 
-Konfigurationen und schon war die App deployt. Beim nächsten Mal würde wir vielleicht ein wenig früher nach Hilfe bezüglich den Student Credits suchen anstatt uns selbst vor dem Bildschirm verrückt zu machen.
+Konfigurationen und schon war die App deployt. Beim nächsten Mal würde wir vielleicht ein wenig früher nach Hilfe bezüglich den Student-Credits suchen anstatt uns selbst vor dem Bildschirm verrückt zu machen.
 
 ## Alternative Tools
 Wie schon oben erwähnt gibt es das Pendant von Amazon, nämlich Amazon Web Services (AWS). Inzwischen haben aber auch Unternehmen wie Google, Oracle und Nord ein Cloud Computing Dienst.
