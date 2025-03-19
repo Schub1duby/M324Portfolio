@@ -181,6 +181,8 @@ Dies führte zu einem komischen Ergebnis
 ![Bild2 von Azure](https://i.imgur.com/tUae828.jpeg)
 Auch lieferte dies keinen Error in der Konsole, und da ich wie bereits erwähnt nicht sonderlich versiert bin mit Javascript, komme ich an diesem Punkt nicht mehr weiter.
 
+## Reflexion
+Das arbeiten mit dem Gewählten Tool hat für mich so gar nicht funktioniert. Ich hätte mir bessere Rückmeldungen zur Fehlersuche gewünscht, denn ohne diese bin ich aufgeschmissen. Ich denke, wenn man sich in der Thematik besser auskennt, wäre dies weniger ein Problem. Nichtsdestotrotz war es spannend, mal etwas anderes auszuprobieren, auch wenn es schlussendlich nicht funktionierte.
 
 # 2 Release
 
