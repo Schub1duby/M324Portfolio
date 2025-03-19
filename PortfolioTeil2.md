@@ -50,6 +50,138 @@ In der heutigen Zeit ist es ziemlich Schwierig, mit Google gescheite Information
 Dieser schreibt, dass Unit-Tests in der Build-Phase, Integrations-Tests sowie System-Tests in der Test-Phase, und die Akzeptanztests in der Deploy-Phase durchgeführt werden. Weiter überprüfen konnte ich diesen Artikel jedoch nicht, da die referenzierten Artikel nicht mehr existieren.
 Willkommen in der Google suche 2025...
 
+## Tools
+
+Für die Auswahl der Tools entschieden wir uns, mal das erste Google Ergebnis als Anhaltspunkt zu nehmen, und einige darin empfohlene Tools zu analysieren.
+Wir stossen auf die Webseite Browserstack.
+
+Folgende empfohlene Tools fanden wir auf den ersten Blick ansprechend.
+
+Mocha
+Dieses Tool schied leider nach kurzer Recherche aus, da es nur für Node JS geeignet ist. Interessante Wahl für einen Artikel über JS Test Frameworks.
+Ebenfalls stellten wir bei der Recherche zu Karma fest, das Mocha mit Karma läuft.
+
+Jasmine
+Jasmine ist ein Tool, welches drei Installationsavarianten bietet. Standalone, im Browser oder über NodeJS. Ebenfalls ist das Tool ein Open Source Projekt.
+
+Karma
+Karma, ehemals Testacular, ist sehr weit verbreitet. Laut angaben haben sie ihr Projekt in Mocha sowie IntelliJ, und in einem Google-Beitrag wird von diesem Tool regelrecht geschwärmt.
+Auch dieses Tool ist Open Source.
+
+Quellen: https://jasmine.github.io/pages/getting_started.html
+https://karma-runner.github.io/latest/index.html
+https://testing.googleblog.com/2012/11/testacular-spectacular-test-runner-for.html
+https://www.browserstack.com/guide/top-javascript-testing-frameworks
+
+## Umsetzung
+
+Das bereits erläuterte Programm erweitern wir jetzt um ein Paar test mithilfe von Jasmine.
+Mein Javascript Test file liess ich von ChatGPT generieren, da ich nicht die nötigen Kenntnisse habe, um dies selbst zu erledigen.
+
+Er kam zu folgendem Ergebnis:
+```javascript
+describe('Task Manager', function() {
+    let taskInput, descInput, taskList;
+
+    beforeEach(function() {
+        // Set up the DOM for testing
+        document.body.innerHTML = `
+            <input id="taskInput" />
+            <input id="descInput" />
+            <ul id="taskList"></ul>
+        `;
+        
+        // Get elements
+        taskInput = document.getElementById('taskInput');
+        descInput = document.getElementById('descInput');
+        taskList = document.getElementById('taskList');
+    });
+
+    describe('addTask()', function() {
+        it('should add a task to the list when valid inputs are provided', function() {
+            taskInput.value = 'New Task';
+            descInput.value = 'Task description';
+
+            addTask(); // Call the function to test
+
+            const taskItems = taskList.getElementsByTagName('li');
+            expect(taskItems.length).toBe(1); // One task added
+            expect(taskItems[0].querySelector('span').textContent).toBe('New Task');
+            expect(taskItems[0].querySelector('.description').textContent).toBe('Task description');
+        });
+
+        it('should clear the inputs after adding a task', function() {
+            taskInput.value = 'New Task';
+            descInput.value = 'Task description';
+
+            addTask();
+
+            expect(taskInput.value).toBe('');
+            expect(descInput.value).toBe('');
+        });
+
+        it('should not add a task if the task input is empty', function() {
+            taskInput.value = '';
+            descInput.value = 'Task description';
+
+            addTask();
+
+            expect(taskList.getElementsByTagName('li').length).toBe(0); // No tasks added
+        });
+    });
+
+    describe('removeTask()', function() {
+        it('should remove a task when the delete button is clicked', function() {
+            taskInput.value = 'Task to Remove';
+            descInput.value = 'Description to remove';
+            addTask(); // Add task
+
+            const deleteButton = taskList.querySelector('.delete');
+            deleteButton.click();
+
+            expect(taskList.getElementsByTagName('li').length).toBe(0); // Task removed
+        });
+    });
+
+    describe('toggleDescription()', function() {
+        it('should toggle the visibility of the task description when clicked', function() {
+            taskInput.value = 'Task with Description';
+            descInput.value = 'Description content';
+            addTask(); // Add task
+
+            const taskHeader = taskList.querySelector('.task-header');
+            const description = taskList.querySelector('.description');
+
+            // Initially, description should be hidden
+            expect(description.style.display).toBe('');
+
+            // Click to toggle visibility
+            taskHeader.click();
+            expect(description.style.display).toBe('block'); // Description visible
+
+            // Click again to toggle back
+            taskHeader.click();
+            expect(description.style.display).toBe(''); // Description hidden
+        });
+    });
+});
+
+```
+
+Integriert ins HTML wird das Ganze folgendermassen:
+```html
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.min.js"></script>
+    <script src="test.js"></script>
+```
+
+Dies führte zu einem komischen Ergebnis
+![Bild2 von Azure](https://i.imgur.com/tUae828.jpeg)
+Auch lieferte dies keinen Error in der Konsole, und da ich wie bereits erwähnt nicht sonderlich versiert bin mit Javascript, komme ich an diesem Punkt nicht mehr weiter.
+
+
 # 2 Release
 
 Für diesen Teil setzten wir wie Folgt einen Docker Container auf.
@@ -161,9 +293,9 @@ Klar wir haben eine sehr einfache App und wenn sie ein wenig komplexer ist, brau
 
 
 ## Reflexion
-Cyrill: Ich habe wirklich gefühlte 2 Jahre Lebenszeit verloren bis ich mal endlich diese Studentcredits bekommen habe. 
+Wir haben wirklich gefühlte 2 Jahre Lebenszeit verloren bis wir mal endlich diese Studentcredits bekommen haben. 
 Aber danach ging alles wie vom Schnürchen von statten. Formular ausfüllen bezüglich der Static Web App, ein wenig den Kopf einschalten bei den 
-Konfigurationen und schon war die App deployt. Beim nächsten Mal würde ich vielleicht ein wenig früher mir Hilfe bezüglich den Student Credits suchen anstatt mich selbst vor dem Bildschirm verrückt zu machen.
+Konfigurationen und schon war die App deployt. Beim nächsten Mal würde wir vielleicht ein wenig früher nach Hilfe bezüglich den Student Credits suchen anstatt uns selbst vor dem Bildschirm verrückt zu machen.
 
 ## Alternative Tools
 Wie schon oben erwähnt gibt es das Pendant von Amazon, nämlich Amazon Web Services (AWS). Inzwischen haben aber auch Unternehmen wie Google, Oracle und Nord ein Cloud Computing Dienst.
