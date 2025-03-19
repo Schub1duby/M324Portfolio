@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93e49a3-8c69-46d4-b682-571f48553bb6" name="Changes" comment="chore: clean up the document and make it ready for handin">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +189,8 @@
       <workItem from="1741778772014" duration="222000" />
       <workItem from="1741814277354" duration="2292000" />
       <workItem from="1741939842778" duration="50000" />
-      <workItem from="1742368818969" duration="4921000" />
+      <workItem from="1742368818969" duration="5203000" />
+      <workItem from="1742378098541" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add gitignore">
       <option name="closed" value="true" />
